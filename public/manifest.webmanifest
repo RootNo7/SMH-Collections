@@ -1,0 +1,9 @@
+{
+  "name": "SMH Collections",
+  "short_name": "SMH",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#f8f6f0",
+  "theme_color": "#f8f6f0",
+  "icons": [{ "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

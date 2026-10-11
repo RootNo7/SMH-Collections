@@ -1,0 +1,26 @@
+{
+  "name": "smh-collections",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Premium editorial fashion storefront with an Express and SQLite backend.",
+  "engines": {
+    "node": ">=22.16 <25"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "admin:create": "node scripts/make-admin.js",
+    "test": "node --test",
+    "check": "node --check server.js && node --check server/db.js && node --check server/seed.js && node --check server/lib/security.js && node --check server/lib/validation.js && node --check server/lib/mailer.js && node --check server/lib/sqlite-session-store.js && node --check server/routes/auth.routes.js && node --check server/routes/store.routes.js && node --check server/routes/admin.routes.js && node --check server/routes/contact.routes.js && node --check scripts/make-admin.js && node --check public/js/api.js && node --check public/js/app.js && node --check public/js/products.js && node --check public/js/product.js && node --check public/js/cart.js && node --check public/js/wishlist.js && node --check public/js/checkout.js && node --check public/js/account.js && node --check public/js/orders.js && node --check public/js/order-success.js && node --check public/js/contact.js && node --check public/js/admin.js && node --check tests/validation.test.js && node --check tests/project.test.js"
+  },
+  "dependencies": {
+    "argon2": "^0.44.0",
+    "better-sqlite3": "^12.11.1",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.2.1",
+    "express-session": "^1.18.2",
+    "helmet": "^8.1.0",
+    "nodemailer": "^7.0.5"
+  }
+}

@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Complete your SMH Collections order."><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="manifest" href="manifest.webmanifest"><title>Checkout | SMH Collections</title><link rel="stylesheet" href="css/style.css"><script src="js/api.js" defer></script><script src="js/app.js" defer></script><script src="js/checkout.js" defer></script></head>
+<body data-page="checkout"><div id="site-header"></div><main><section class="page-header"><div class="container"><span class="section-label">Almost yours</span><h1>Checkout.</h1><p>Confirm your delivery details. Cash on delivery is currently available.</p></div></section><section class="section"><div class="container checkout-layout"><div>
+  <div id="checkout-signin-note" class="checkout-notice" hidden>You are browsing as a guest. Sign in before placing the order so it can be attached to your account. Your guest bag will merge after sign-in.</div>
+  <p id="checkout-message" class="alert" role="status" aria-live="polite" hidden></p><a id="checkout-signin-link" class="btn btn-secondary" href="account.html?next=checkout.html" hidden>Sign in to continue</a>
+  <form id="checkout-form">
+    <section class="checkout-section"><h2>Delivery information</h2>
+      <div class="form-group"><label for="shipping-name">Full name</label><input id="shipping-name" name="shippingName" autocomplete="name" minlength="2" maxlength="100" required></div>
+      <div class="form-row"><div class="form-group"><label for="shipping-email">Email address</label><input id="shipping-email" name="email" type="email" autocomplete="email" maxlength="254" required></div><div class="form-group"><label for="shipping-phone">Phone number</label><input id="shipping-phone" name="phone" type="tel" autocomplete="tel" minlength="7" maxlength="24" required></div></div>
+      <div class="form-group"><label for="address-line1">Street address</label><input id="address-line1" name="addressLine1" autocomplete="address-line1" minlength="4" maxlength="180" required></div>
+      <div class="form-group"><label for="address-line2">Apartment, floor, landmark (optional)</label><input id="address-line2" name="addressLine2" autocomplete="address-line2" maxlength="180"></div>
+      <div class="form-row"><div class="form-group"><label for="city">City</label><input id="city" name="city" autocomplete="address-level2" minlength="2" maxlength="80" required></div><div class="form-group"><label for="postal-code">Postal code</label><input id="postal-code" name="postalCode" autocomplete="postal-code" minlength="2" maxlength="20" required></div></div>
+      <div class="form-group"><label for="order-notes">Delivery notes (optional)</label><textarea id="order-notes" name="notes" maxlength="500" placeholder="Anything your delivery person should know?"></textarea></div>
+    </section>
+    <section class="checkout-section"><h2>Payment</h2><div class="checkout-notice">Cash on delivery — pay the delivery person when your order arrives. Online card payments are not enabled in this build.</div></section>
+    <button class="btn btn-primary btn-block" type="submit">Place order</button><p class="form-note" style="margin-top:12px">Your total and inventory are verified by the server before an order is created.</p>
+  </form>
+</div><aside class="summary-card"><h2>Your order</h2><div id="checkout-items"><p class="loading-state">Loading bag…</p></div><div id="checkout-summary"></div><p class="form-note" style="margin-top:14px">Free shipping on orders of Rs. 5,000 or more.</p></aside></div></section></main><div id="site-footer"></div></body></html>
